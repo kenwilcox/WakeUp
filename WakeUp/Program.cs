@@ -17,7 +17,8 @@ namespace WakeUp
     static void Fecth(string url, string fileName)
     {
       if (_client == null) _client = new WebClient();
-
+      Directory.CreateDirectory(Path.GetDirectoryName(fileName));
+      
       try
       {
         Uri uri = new Uri(url);
@@ -37,6 +38,7 @@ namespace WakeUp
     
     static void Main(string[] args)
     {
+      // Just add what you want here...
       Dictionary<string, string> keepAlive = new Dictionary<string, string>() {
         {@"C:\Temp\WakeUp\api.canyonco.org.html", "http://api.canyonco.org/"},
         {@"C:\Temp\WakeUp\sheriff-beta.html", "http://api.canyonco.org/Sheriff-Beta/"},
