@@ -8,7 +8,7 @@ using System.IO;
 namespace WakeUp
 {
   /// <summary>
-  /// Simple program that just hits a bunch or pages.
+  /// Simple program that just hits a bunch of pages.
   /// </summary>
   class Program
   {
@@ -41,7 +41,10 @@ namespace WakeUp
       // Just add what you want here...
       Dictionary<string, string> keepAlive = new Dictionary<string, string>() {
         {@"C:\Temp\WakeUp\api.canyonco.org.html", "http://api.canyonco.org/"},
-        {@"C:\Temp\WakeUp\sheriff-beta.html", "http://api.canyonco.org/Sheriff-Beta/"},
+        {@"C:\Temp\WakeUp\sheriff.html", "http://api.canyonco.org/Sheriff/"},
+        {@"C:\Temp\WakeUp\sheriff-help.html", "http://api.canyonco.org/Sheriff/Help"},
+        {@"C:\Temp\WakeUp\election.html", "http://api.canyonco.org/Election/"},
+        {@"C:\Temp\WakeUp\election-help.html", "http://api.canyonco.org/Election/Help"},
         {@"C:\Temp\WakeUp\kdev.canyonco.org.html", "http://kdev.canyonco.org/"},
         {@"C:\Temp\WakeUp\ktest.canyonco.org.html", "http://ktest.canyonco.org/"},
         {@"C:\Temp\WakeUp\kprod2.canyonco.org.html", "http://kprod2.canyonco.org/"},
